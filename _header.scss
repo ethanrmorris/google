@@ -1,0 +1,82 @@
+.header {
+  @include flexCenter();
+  height: 60px;
+  top: 0;
+  z-index: 100;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  z-index: 1;
+  width: 100%;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.listItem {
+  height: 60px;
+}
+
+.headerLeft,
+.headerRight {
+  @include flexCenter();
+  list-style: none;
+}
+
+.headerLeft {
+  padding-left: 25px;
+}
+
+.headerRight {
+  padding-right: 25px;
+}
+
+.headerLinks {
+  @include flexCenter();
+  width: 60px;
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  @include flexCenter();
+  height: 15px;
+  max-width: 100%;
+}
+
+.menuBack {
+  @include flexCenter();
+  width: 67%;
+  height: 67%;
+  &:hover {
+    padding: 0;
+    background-color: #ebe8e8;
+    border-radius: 100px;
+  }
+}
+
+.signInBtn {
+  @include flexCenter();
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 40px;
+  width: 110px;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background-color: #3078eb;
+  color: white;
+  font-size: 1.1rem;
+  &:hover {
+    background-color: #4285f4;
+    box-shadow: 0.5px 0.5px 2px 0.5px #3078eb;
+    cursor: pointer;
+  }
+}
